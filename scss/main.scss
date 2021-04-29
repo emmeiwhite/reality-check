@@ -1,0 +1,31 @@
+// 1. Variables in SCSS
+$primary-color: #272727;
+$accent-color: #ff652f;
+$text-color: #fff;
+
+// 2. Basic Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+// 3. Map
+
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
+
+body {
+  background-color: $accent-color;
+  .reality-check {
+    font-weight: map-get($font-weights, bold);
+    color: $primary-color;
+  }
+}
