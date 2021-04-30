@@ -22,10 +22,41 @@ $font-weights: (
   "bold": 700,
 );
 
+$main-navigation: main-navigation; // Element Selector
 body {
   background-color: $accent-color;
   .reality-check {
     font-weight: map-get($font-weights, bold);
     color: $primary-color;
+  }
+}
+
+// Important to understand the element selector #{element}
+header .#{$main-navigation} {
+  color: #fff;
+}
+
+// Nesting and Short_cuts with BEM Terminology
+
+.main {
+  min-height: 200px;
+  width: 400px;
+  padding: 1rem;
+  border: 1px solid rgb(14, 2, 2);
+  color: #fff;
+  .main__paragraph1 {
+    background-color: teal;
+    padding: 0.5rem;
+  }
+  &__paragraph2 {
+    background: blue;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+
+  // Element Selector being used
+  #{&}__paragraph3 {
+    background-color: wheat;
+    color: #000;
   }
 }

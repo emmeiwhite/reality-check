@@ -17,4 +17,32 @@ body .reality-check {
   font-weight: 700;
   color: #272727;
 }
+
+header .main-navigation {
+  color: #fff;
+}
+
+.main {
+  min-height: 200px;
+  width: 400px;
+  padding: 1rem;
+  border: 1px solid #0e0202;
+  color: #fff;
+}
+
+.main .main__paragraph1 {
+  background-color: teal;
+  padding: 0.5rem;
+}
+
+.main__paragraph2 {
+  background: blue;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.main .main__paragraph3 {
+  background-color: wheat;
+  color: #000;
+}
 /*# sourceMappingURL=main.css.map */
